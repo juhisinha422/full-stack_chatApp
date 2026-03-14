@@ -1,0 +1,15 @@
+Deployed a 3-Tier Chat Application on Kubernetes 
+
+I worked on deploying a full stack chat application in a Kubernetes environment, focusing on production style architecture rather than just containerising the app
+
+What I implemented:
+1. Dockerized frontend and backend services
+2. MongoDB as a StatefulSet with PV/PVC for persistent storage
+3. Horizontal Pod Autoscaler (HPA) for backend scaling
+4. CronJob for automated MongoDB backups
+5. Ingress-based routing instead of NodePort
+6. Prometheus & Grafana stack for observability
+
+One of the biggest learnings was debugging label selectors, service mappings, and monitoring configurations. Things rarely work perfectly on the first attempt, but understanding why something fails is where real learning happens.
+
+This project helped me strengthen my understanding of Kubernetes workloads, scaling strategies, storage management, and cluster level troubleshooting.
